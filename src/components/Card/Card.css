@@ -1,0 +1,25 @@
+.card {
+
+    .card-full-description {
+        --opacityTransition: .5s;
+        --fontTransition: .8s;
+    }
+
+    .card-full-description li:first-child {
+        transition: opacity var(--opacityTransition) var(--fontTransition), font-size var(--fontTransition);
+    }
+
+    .card-full-description li:not(:first-child) {
+        transition: opacity var(--opacityTransition), font-size var(--fontTransition) var(--opacityTransition);
+    }
+
+    &:hover {
+        .card-full-description li:first-child {
+            transition: opacity var(--opacityTransition), font-size var(--fontTransition) var(--opacityTransition);
+        }
+
+        .card-full-description li:not(:first-child) {
+            transition: opacity var(--opacityTransition) var(--fontTransition), font-size var(--fontTransition);
+        }
+    }
+}
