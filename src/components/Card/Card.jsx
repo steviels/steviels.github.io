@@ -31,7 +31,7 @@ function Card ({ header, shortDescription, fullDescription, images, skills, colo
 
 function WorkCard ({ year, company, position, fullDescription, skills}) {
     return (
-        <div className = "card group mx-auto w-6/12 mb-12 px-2 py-2 border-solid border-l-4 border-l-[#f007] transition duration-500 hover:border-l-[#f00]">
+        <div className = "card group mx-auto w-4/5 md:w-3/5 lg:w-6/12 mb-12 px-2 py-2 border-solid border-l-4 border-l-[#f007] transition duration-500 hover:border-l-[#f00]">
             <h3>{ year }</h3>
             <h3>{ company + ", " + position }</h3>
 
@@ -58,7 +58,7 @@ function WorkCard ({ year, company, position, fullDescription, skills}) {
 
 function ProjectCard({ title, shortDescription, fullDescription, skills }) {
     return (
-        <div className = "card group mx-auto w-6/12 mb-12 px-2 py-2 border-solid border-r-4 border-r-[#0000c866] transition duration-500 hover:border-r-[#0000c8]">
+        <div className = "card group mx-auto w-4/5 md:w-3/5 lg:w-6/12 mb-12 px-2 py-2 border-solid border-r-4 border-r-[#0000c866] transition duration-500 hover:border-r-[#0000c8]">
             <h3>{ title }</h3>
             <p>{ shortDescription }</p>
 
