@@ -3,14 +3,14 @@ bg-gradient-to-r from-[#0007] to-transparent bg-[#123]
 */
 
 #hero-page {
-    background: #09131c;
-}
-
-#hero-section {
-    background: linear-gradient(
-        0deg, #0007, #0000
-    ), #123;
+    #hero-section {
+        div#hero-animation {
+            
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
 }
+
+background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
